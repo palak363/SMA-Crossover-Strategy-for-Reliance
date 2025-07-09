@@ -47,15 +47,3 @@ python Strategy.py
 ```
 
 The chart window will open displaying the crossover signals.
-
----
-
-## Getting the Data from Zerodha
-
-1. Go to [kite.zerodha.com](https://kite.zerodha.com/)
-2. Select Reliance and open its chart
-3. Set candle interval to 1 Day (1D)
-4. Open chart settings (gear icon)
-5. Click "Save Chart Data" to download as CSV
-
----
