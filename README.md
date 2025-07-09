@@ -1,4 +1,4 @@
-# SMA Crossover Strategy on Reliance
+# SMA Crossover Strategy for Reliance
 
 This project demonstrates a simple algorithmic trading strategy using historical stock data for Reliance Industries. The strategy is based on identifying crossover points between two simple moving averages (SMAs) to generate buy and sell signals.
 
