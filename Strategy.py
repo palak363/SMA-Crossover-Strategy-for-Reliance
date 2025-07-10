@@ -1,17 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load CSV with multi-level headers
+# Loading CSV with multi-level headers
 df = pd.read_csv(r"C:\Users\L2\Desktop\x\reliance.csv", skiprows=2, header=[0, 1], index_col=0, parse_dates=True)
 
-# Flatten multi-index columns (e.g., ('Close', 'RELIANCE.NS') → 'Close_RELIANCE.NS')
+# Flatten multi-index columns
 df.columns = [f"{col[0]}_{col[1]}" for col in df.columns]
 
-
 # Extract the Close price
-#df['Close'] = df.filter(like='Close_').iloc[:, 0]
 df['Close'] = df['Unnamed: 1_level_0_1290.7442626953125']
-
 
 # Calculate Moving Averages
 df['SMA_5'] = df['Close'].rolling(window=5).mean()
